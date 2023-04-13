@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <header>
@@ -19,8 +20,24 @@
                 <a href="login.html">Login</a>
                 <a href="registration.html" class="active">Register</a>
             </div>
-
         </nav>
     </header>
+
+    <div class="registration">
+        <h1>Registration Form</h1>
+        <form action="#"   method="post">
+            <p>Full Name:</p>
+            <input type="text" name="fullname" id="f1" placeholder="Full Name">
+            <p>User Name:</p>
+            <input type="text" name="Username" placeholder="Username" id="f2">
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="xyz@gmail.com" id="f3">
+            <p>Password:</p>
+            <input type="password" name="password" id="f4" placeholder="Pass@Word@123">
+            
+            <button type="subm">Register</button>
+            <a id="log" href="login.html">Have an account click to login</a>
+        </form>
+    </div>
 </body>
 </html>

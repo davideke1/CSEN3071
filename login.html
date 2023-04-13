@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
@@ -22,21 +23,26 @@
             </div>
 
         </nav>
-
-        <div class="loginbox">
-            <img src="data:image/png;base64,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" class="avatar">
-            <h1>Login Here</h1>
-            <form>
-                <p>Username</p>
-                <input type="text" name="" placeholder="Enter Username">
-                <p>Password</p>
-                <input type="password" name="" placeholder="Enter Password">
-                <input type="submit" name="" value="Login">
-                <a href="#">Lost your password?</a><br>
-                <a href="registration.html">Don't have an account?</a>
-            </form>
-        </div>
     </header>
+<div class="body">
+    <div class="loginbox">
+        <img src="data:image/png;base64,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" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="#">Lost your password?</a><br>
+            <a href="registration.html">Don't have an account?</a>
+        </form>
+    </div>
+</div>
+        
+   
+    
 
+    
 </body>
 </html>
